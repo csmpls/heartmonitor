@@ -26,8 +26,6 @@ serialPort = new SerialPort(port, {
   baudrate:115200
 })
 
-var lastObserved = 0
-
 // pipe 1 val ever 300 minutes to a log
 _('data', serialPort)
   .ratelimit(1,300)
