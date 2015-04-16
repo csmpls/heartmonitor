@@ -6,7 +6,6 @@ var _ = require('highland')
 
 function getTime() {return moment().format('MMMM Do YYYY, H:mm:ss:SSS') }
 function getLogLine(d) {return [getTime(), String(d)].join(',') }
-function add(x, y) { return x + y }
 
 // config
 var port = '/dev/cu.usbmodem1421'
